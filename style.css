@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    font-size: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: cadetblue;
+    height: 400px;
+    display: flex;
+    padding: 30px 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+header > .pic-block {
+    flex: 1;
+}
+
+header > .pic-block > img {
+    display: block;
+    max-width: 100%;
+    /* border-radius: 50%; */
+    margin: 0 auto;
+}
+
+header > .content-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .content-block > .name {
+    font-size: 3rem;
+}
+
+header > .content-block > .designation {
+    font-size: 1.5rem;
+}
+
+header > .content-block > .brief {
+    font-size: 1.7rem;
+    margin-top: 30px;
+}
+
+header > .content-block > .link-coll {
+    display: flex;
+    margin-top: 40px;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+header > .content-block > .link-coll > .link > a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: firebrick;
+    height: 40px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: #d8d8d8;
+    padding: 40px 1rem;
+}
+
+section {
+    max-width: 80%;
+    margin: 0 auto 80px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin: 0px 0px 60px;
+}
+.section-sub {
+    font-size: 1.7rem;
+    border-top: 1px solid crimson;
+    color: crimson;
+    border-bottom: 1px solid crimson;
+    padding: 10px 0px;
+    margin: 0px 0px 20px;
+}
+.section-sub-info{
+    font-size: 1.6rem;
+}
+
+.box {
+    background-color: white;
+    padding: 5rem 3rem;
+    border-radius: 5px;
+    margin: 0px 0px 30px;
+
+}
+.edu > li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: black;
+    color: #444444;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: .7rem;
+    }
+
+    header {
+        height: auto;
+        padding: 0px;
+    }
+
+    header > .content-block > .name {
+        font-size: 2rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+
+    }
+
+    header > .content-block {
+        padding: 0px 20px;
+        
+    }
+    header > .content-block > .link-coll {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    :root{
+        font-size: .4rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+    }
+
+    header > .content-block {
+        margin-top: 30px;
+    }
+    header > .content-block > .link-coll {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root{
+        font-size: .7rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+    }
+
+    header > .content-block {
+        margin-top: 30px;
+    }
+    header > .content-block > .link-coll {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    :root{
+        font-size: .8rem;
+    }
+
+    header{
+        flex-direction: row;
+        height: 500px;
+    }
+
+    header > .content-block {
+        margin-top: 0;
+    }
+    header > .content-block > .link-coll {
+        width: 70%;
+    }
+}
+
+/* @media only screen and (min-width: 1200px) {
+    :root{
+        font-size: .8rem;
+    }
+
+    header{
+        height: 400px;
+    }
+
+    header > .content-block {
+        margin-top: 0px;
+    }
+    header > .content-block > .link-coll {
+        width: 60%;
+    }
+
+} */
